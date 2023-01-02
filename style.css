@@ -1,0 +1,202 @@
+.fondo{
+    margin: 0;
+    height: 100vh;
+    background:linear-gradient( rgb(196, 158, 240), rgb(255, 255, 255));
+    
+
+}
+
+#caja-ppal{        
+    margin: 25px auto;
+    padding: 25px;
+    background:linear-gradient(rgb(196, 158, 240), rgb(129, 204, 247));
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 5px #000;
+      
+}
+
+.dato{
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: space-between;
+        
+    
+}
+
+#formulario{
+    margin: 20px 0;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+   
+        
+}
+
+#datoDia,
+#datoNumero{    
+    margin-bottom: 10px;
+    font-weight: bolder; 
+    font-size: 170%;
+    text-shadow: #000 0px 2px 0px;
+    color: #fff;
+   
+}
+
+#datoNumero{
+    margin-left: 5px;   
+}
+
+h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: #000 0px 2px 0px;
+    color: #fff;
+           
+}
+
+p{
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;    
+    text-shadow: 2px 2px 4px #fff;
+}
+
+div.tarea{
+    /*background:linear-gradient(rgb(250, 199, 199), rgb(248, 143, 183));*/
+    background:linear-gradient(rgb(248, 201, 248), rgb(207, 164, 247));
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;    
+    box-shadow: 2px 2px 2px #000;
+   
+    
+}
+
+div.tarea.done{
+    text-decoration: line-through;
+    background:linear-gradient(rgb(204, 253, 199), rgb(99, 253, 124));
+   
+}
+
+button.agregarTarea,
+button#boton-ordenar.ordenarBoton,
+input{
+    border-radius: 5px;
+    border-color: rgb(252, 252, 253);
+    border-style: ridge;    
+    font-weight: lighter;
+    text-align: center;   
+   
+    
+}
+button.agregarTarea{
+    font-weight: bolder;
+    
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    
+}
+
+button:hover{
+    background-color: rgb(170, 241, 156);
+    color: #000;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 420px){
+    #caja-ppal{
+        width: 75%;
+        margin: 25px auto;
+        height: 60%;        
+    }
+
+    #formulario{
+        align-items: center;
+        justify-content: center;
+    }
+
+    button.agregarTarea,
+    button#boton-ordenar.ordenarBoton,
+    input{
+        border-radius: 5px;
+        border-color: rgb(252, 252, 253);
+        border-style: ridge;    
+        font-weight: lighter;
+        text-align: center;
+        max-width: 35vw;   
+    
+    }
+
+    button.agregarTarea{
+        margin:2px ;
+    }
+
+
+}
+
+@media (max-width: 320px){
+    #caja-ppal{
+        width: 90%;
+        margin: 25px auto;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #datoDia,
+    #datoNumero{    
+        text-shadow: #fff 0px 2px 0px;
+        color: #000;
+   
+    }
+
+    button.agregarTarea,
+    button#boton-ordenar.ordenarBoton,
+    input{
+        border-radius: 5px;
+        border-color: rgb(252, 252, 253);
+        border-style: ridge;    
+        font-weight: lighter;
+        text-align: center;  
+        max-width: 40vw;   
+        margin: auto; 
+    
+    }
+
+    
+    #formulario{
+        
+        justify-content: space-between; 
+        align-items: center;       
+            
+    }
+
+    button.agregarTarea,
+    button#boton-ordenar.ordenarBoton,
+    input{
+    border-radius: 5px;
+    border-color: rgb(252, 252, 253);
+    border-style: ridge;    
+    font-weight: lighter;
+    text-align: center;  
+    max-width: 40vw;   
+     
+    
+    }
+    button.agregarTarea{
+        margin:2px ;
+    }
+
+
+      
+
+}
+
+
